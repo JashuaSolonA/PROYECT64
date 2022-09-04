@@ -19,9 +19,9 @@ def hacer_inicio():
 
 def hacer_aprender():
     ly_aprender = [ [sg.Text("Estas son las notas ubicadas en el pentagrama en clave de sol:")],
-            [sg.Image("clave_de_sol.png")],
+            [sg.Image("recursos2/clave_de_sol.png")],
             [sg.Text("Estas son las notas ubicadas en el pentagrama en clave de fa:")],
-            [sg.Image("clave_de_fa.png")],
+            [sg.Image("recursos2/clave_de_fa.png")],
             [sg.Button("Volver al menú inicio")],
             [sg.Button("Salir de la aplicación")]
             ]
