@@ -152,7 +152,7 @@ while ejecuta:
                                     else:
                                         sg.popup_ok('Felicitaciones')
                                         f = open("file.txt", "a")
-                                        f.write("1(✔️)")
+                                        f.write("1(✅)")
                                         f.close
                                     if event == 'Siguiente':
                                         juego_sol_1.close()
@@ -172,7 +172,7 @@ while ejecuta:
                                             else:
                                                 sg.popup_ok('Felicitaciones')
                                                 f = open("file.txt", "a")
-                                                f.write("2(✔️)")
+                                                f.write("2(✅)")
                                                 f.close                                        
                                             if event == 'Siguiente':
                                                 juego_sol_2.close()
@@ -192,7 +192,7 @@ while ejecuta:
                                                     else:
                                                         sg.popup_ok('Felicitaciones')
                                                         f = open("file.txt", "a")
-                                                        f.write("3(✔️)")
+                                                        f.write("3(✅)")
                                                         f.close                                                  
                                                     if event == 'Siguiente':
                                                         juego_sol_3.close()
@@ -212,7 +212,7 @@ while ejecuta:
                                                             else:
                                                                 sg.popup_ok('Felicitaciones')
                                                                 f = open("file.txt", "a")
-                                                                f.write("4(✔️)")
+                                                                f.write("4(✅)")
                                                                 f.close                                                             
                                                             if event == 'Siguiente':
                                                                 juego_sol_4.close()
@@ -232,7 +232,7 @@ while ejecuta:
                                                                     else:
                                                                         sg.popup_ok('Felicitaciones')
                                                                         f = open("file.txt", "a")
-                                                                        f.write("5(✔️)")
+                                                                        f.write("5(✅)")
                                                                         f.close                                                                      
                                                                     if event == 'Siguiente':
                                                                         juego_sol_5.close()
@@ -252,7 +252,7 @@ while ejecuta:
                                                                             else:
                                                                                 sg.popup_ok('Felicitaciones')
                                                                                 f = open("file.txt", "a")
-                                                                                f.write("6(✔️)")
+                                                                                f.write("6(✅)")
                                                                                 f.close                                                                             
                                                                             if event == 'Siguiente':
                                                                                 juego_sol_6.close()
@@ -272,7 +272,7 @@ while ejecuta:
                                                                                     else:
                                                                                         sg.popup_ok('Felicitaciones')
                                                                                         f = open("file.txt", "a")
-                                                                                        f.write("7(✔️)")
+                                                                                        f.write("7(✅)")
                                                                                         f.close                                                                                     
                                                                                     if event == 'Siguiente':
                                                                                         juego_sol_7.close()
@@ -292,7 +292,7 @@ while ejecuta:
                                                                                             else:
                                                                                                 sg.popup_ok('Felicitaciones')
                                                                                                 f = open("file.txt", "a")
-                                                                                                f.write("8(✔️)")
+                                                                                                f.write("8(✅)")
                                                                                                 f.close
                                                                                             if event == 'Ver puntuación':
                                                                                                 juego_sol_8.close()
