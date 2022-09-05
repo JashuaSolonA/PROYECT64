@@ -13,12 +13,12 @@ def mezclar():
 mezclar()
 
 def separar_audio(audio):
-    ad=f'audio_notas/{audio}.wav'
+    ad=f'audio_notas_fa/{audio}.wav'
     return ad
 
 
 def separar_imagen(imagen):
-    img=f'imagen_notas/{imagen}.png'
+    img=f'imagen_notas_fa/{imagen}.png'
     return img
 
 def hacer_juego_fa_1():

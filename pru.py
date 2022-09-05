@@ -21,12 +21,12 @@ def mezclar():
 mezclar()
 
 def separar_audio(audio):
-    ad=f'audio_de_las_notas/{audio}.wav'
+    ad=f'audio_notas_sol/{audio}.wav'
     return ad
 
 
 def separar_imagen(imagen):
-    img=f'imagen_de_notas/{imagen}.png'
+    img=f'imagen_notas_sol/{imagen}.png'
     return img
 
 # print (ale)
