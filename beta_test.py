@@ -23,8 +23,8 @@ class Interface:
     def hacer_inicio():
         ly_inicio = [  [sg.Button("Aprende las notas musicales")],
                 [sg.Button("Pon en práctica tus conocimientos")],
-                [sg.Button("Salir de la aplicación")],
-                [sg.Button('Ranking')]
+                [sg.Button('Ranking')],
+                [sg.Button("Salir de la aplicación")]
                 ]   
         return sg.Window("Menú inicio", ly_inicio)
 
