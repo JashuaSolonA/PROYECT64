@@ -23,7 +23,8 @@ class Interface:
     def hacer_inicio():
         ly_inicio = [  [sg.Button("Aprende las notas musicales")],
                 [sg.Button("Pon en práctica tus conocimientos")],
-                [sg.Button("Salir de la aplicación")]
+                [sg.Button("Salir de la aplicación")],
+                [sg.Button('Ranking')]
                 ]   
         return sg.Window("Menú inicio", ly_inicio)
 
@@ -57,7 +58,7 @@ class Interface:
     def hacer_puntuacion():
         ly_lima = [
             [sg.Text(Interface.b[0])],
-            [sg.Button('OK')]
+            [sg.Button('Salir')]
         ]
         return sg.Window('puntuacion final',ly_lima)
 
@@ -123,6 +124,12 @@ while ejecuta:
                     event, values = inicio.read()
                     if event == "Salir de la aplicación"  or event == sg.WIN_CLOSED:
                         break
+                    if event == 'Ranking':
+                        inicio.close()
+                        while True:
+                            event, values = puntuacion.read()
+                            if event == "Salir"  or event == sg.WIN_CLOSED:
+                                break
                     if event == "Aprende las notas musicales":
                         inicio.close()
                         while True:
@@ -288,19 +295,16 @@ while ejecuta:
                                                                                             elif values[1] != str(pru.ale[7]):
                                                                                                 sg.popup_ok('Incorrecto :c')
                                                                                                 f = open("file.txt", "a")
-                                                                                                f.write("8(❌)")
+                                                                                                f.write("8(❌) JuegoSol")
                                                                                                 f.close
                                                                                             else:
                                                                                                 sg.popup_ok('Felicitaciones')
                                                                                                 f = open("file.txt", "a")
-                                                                                                f.write("8(✔️)")
+                                                                                                f.write("8(✔️) JuegoSol")
                                                                                                 f.close
-                                                                                            if event == 'Ver puntuación':
+                                                                                            if event == 'Finalizar':
                                                                                                 juego_sol_8.close()
-                                                                                                while True:
-                                                                                                    event, values = puntuacion.read()
-                                                                                                    if event == 'OK' or sg.WIN_CLOSED:
-                                                                                                        break
+
 
                             elif event =="fa":
                                 elegir.close()
@@ -454,19 +458,16 @@ while ejecuta:
                                                                                                 pass
                                                                                             elif values[1] != str(pru_2.alo[7]):
                                                                                                 f = open("file.txt", "a")
-                                                                                                f.write("8(❌)")
+                                                                                                f.write("8(❌) JuegoFa")
                                                                                                 f.close
                                                                                             else:
                                                                                                 sg.popup_ok('Felicitaciones')
                                                                                                 f = open("file.txt", "a")
-                                                                                                f.write("8(✔️)")
+                                                                                                f.write("8(✔️) JuegoFa")
                                                                                                 f.close
-                                                                                            if event == 'Ver puntuación':
+                                                                                            if event == 'Finalizar':
                                                                                                 juego_fa_8.close()
-                                                                                                while True:
-                                                                                                    event, values = puntuacion.read()
-                                                                                                    if event == 'OK' or sg.WIN_CLOSED:
-                                                                                                        break
+
     except: 
         print("Ocurrió algún error")
     finally:

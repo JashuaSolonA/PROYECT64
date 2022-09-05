@@ -131,7 +131,7 @@ def hacer_juego_sol_8():
         [sg.Image(separar_imagen(ale[7]))], #aqui va un ramdom
         [sg.Text('¿Qué nota musical es?')],[sg.InputText()],
         [sg.Button('OK')],[sg.Button('Cancel')],
-        [sg.Button('Ver puntuación')]
+        [sg.Button('Finalizar')]
         ]
     return sg.Window("Juego en clave de sol", ly_sol)
 
