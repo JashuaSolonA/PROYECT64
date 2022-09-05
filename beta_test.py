@@ -70,10 +70,10 @@ pygame.mixer.music.load('recursos2/Allegro_Otoño.mp3')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(1.0)
 
-size = 800, 600
+size = 900, 600
 
 VENTANA = pygame.display.set_mode(size)
-pygame.display.set_caption('Musica')
+pygame.display.set_caption('Musica de fondo')
 Imagen = pygame.image.load('recursos2/icono.png')
 pygame.display.set_icon(Imagen)
 
