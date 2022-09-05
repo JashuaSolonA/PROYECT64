@@ -4,6 +4,7 @@ import random
 import numpy as np
 import pru
 import pru_2
+
 class Interface:
     
     def reproductor(cancion):
@@ -63,18 +64,18 @@ Interface.lim()
 
 pygame.mixer.init(frequency=44100)
 
-pygame.mixer.music.load('recursos2/ringtones-super-mario-bros.mp3')
+pygame.mixer.music.load('recursos2/Allegro_Otoño.mp3')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(1.0)
 
-size = 800, 600
+size = 900, 600
 
 VENTANA = pygame.display.set_mode(size)
 pygame.display.set_caption('Musica')
-Imagen = pygame.image.load('recursos2/mariobros.png')
+Imagen = pygame.image.load('recursos2/icono.png')
 pygame.display.set_icon(Imagen)
 
-fondo = pygame.image.load('recursos2/mariobros_redimensionada.png')
+fondo = pygame.image.load('recursos2/fondo.png')
 VENTANA.blit(fondo,(0,0))
 
 ejecuta = True
@@ -153,7 +154,6 @@ while ejecuta:
                                         f = open("file.txt", "a")
                                         f.write("1(✔️)")
                                         f.close
-
                                     if event == 'Siguiente':
                                         juego_sol_1.close()
                                         while True:
@@ -294,9 +294,7 @@ while ejecuta:
                                                                                                 f = open("file.txt", "a")
                                                                                                 f.write("8(✔️)")
                                                                                                 f.close
-                                                                                            Interface.lim()
                                                                                             if event == 'Ver puntuación':
-                                                                                                Interface.lim()
                                                                                                 juego_sol_8.close()
                                                                                                 while True:
                                                                                                     event, values = puntuacion.read()
