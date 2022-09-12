@@ -4,13 +4,6 @@ import numpy as np
 import PySimpleGUI as sg
 import pygame
 
-# lista = ['do','re','mi','fa','sol','la','si','DO_','RE_','MI_','FA_','SOL_','LA_','SI_']
-
-# # def mezclar(lista):
-# simple = []
-# simple = [lista[np.random.randint(low=0,high=len(lista))]]
-# abeja=f'imagen_de_notas/{random.choice(simple)}.png'
-
 ale = []
 
 def mezclar():
